@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+int main{
+  fstream fs;
+  fs.open('file.txt',fstream:: in | fstream:: out | fstream:: app  );
+  SetConsoleCP(1215)
+  string msg;
+  cin >> msg;
+  fs << msg <<  "\n";
+  fs.close();
+  
+}
