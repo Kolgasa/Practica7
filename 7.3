@@ -1,0 +1,27 @@
+#include <iostream>
+#include <fstream>
+#include <string> 
+using namespace std;
+int main ()
+{
+    ifstream fin;
+    fin.open("file.txt");
+    string str;
+    getline(fin,str);
+    cout << str << endl;
+    fin.close();
+}
+#include <iostream>
+#include <fstream>
+using namespace std;
+ int main ()
+{
+    ifstream fin;
+    fin.open("file.txt");
+    char strstr;
+    while(fin.read((char*)&strstr,sizeof (char)))
+    {
+        cout << strstr;
+    }
+    fin.close();
+}
