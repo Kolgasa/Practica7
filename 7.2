@@ -1,0 +1,16 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+                       
+int main() {
+    string B;
+    ifstream fin;
+    fin.open("file.txt");
+    while (fin >> B)
+        {
+            cout << B << endl;
+        }
+
+    fin.close();
+    return 0;
+        }
